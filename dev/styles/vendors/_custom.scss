@@ -1,0 +1,27 @@
+// Color system
+$primary: #37bb7d;
+
+// Nav
+$navbar-nav-link-padding-x: 1rem;
+
+// Navbar
+$navbar-dark-color: #fff;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+);
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: 0;
+$btn-border-radius-lg: 0;
+$btn-border-radius-sm: 0;
+$input-border-radius: 0;
+$input-border-radius-lg: 0;
+$input-border-radius-sm: 0;

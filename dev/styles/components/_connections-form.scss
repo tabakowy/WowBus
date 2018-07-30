@@ -1,0 +1,43 @@
+.connections {
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background: rgba(255,255,255,0.95);
+    padding: 1.5rem 1.5rem 0.5rem 0.5rem;
+  }
+
+  &__control {
+    max-width: 7rem;
+    margin-left: 1rem;
+    flex: 0 1 auto;
+
+    &--wider {
+      max-width: 15rem;
+      min-width: 13rem;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__controls {
+      justify-content: space-between;
+    }
+
+    &__control {
+      flex: 1 1 auto;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    display: flex;
+    align-items: stretch;
+
+    &__controls {
+      flex: 1 1 auto;
+    }
+
+    &__submit {
+      flex: 0 1 15%;
+    }
+  }
+}

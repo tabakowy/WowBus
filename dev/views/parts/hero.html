@@ -1,0 +1,48 @@
+<section class="hero bg-dark text-white p-sm-2 p-md-5">
+
+  <!-- hero lead -->
+  <div class="container py-5">
+    <div class="col-lg-10 py-5">
+      <h1 class="hero__lead font-weight-bold">Podróżuj razem z nami po całej Europie!</h1>
+    </div>
+  </div>
+
+  <!-- connections form -->
+  <form class="connections text-dark font-weight-bold">
+    <div class="connections__controls">
+      <div class="connections__control form-group">
+        <label for="connectionsFrom">Z:</label>
+        <input type="text" class="form-control" id="connectionsFrom" required>
+      </div>
+      <div class="connections__control form-group">
+        <button class="btn btn-link js-connections-swap"><i class="fas fa-exchange-alt text-primary"></i></button>
+      </div>
+      <div class="connections__control form-group">
+        <label for="connectionsTo">Do:</label>
+        <input type="text" class="form-control" id="connectionsTo" required>
+      </div>
+      <div class="connections__control connections__control--wider form-group">
+        <label for="connectionsDate">Odjazd:</label>
+        <div class="input-group">
+          <input type="date" class="form-control" id="connectionsDate" value="2018-06-30" required>
+          <div class="input-group-append">
+            <button class="btn btn-outline-form" type="button"><i class="far fa-calendar-alt text-primary"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="connections__control form-group mr-5">
+        <button class="btn btn-link text-dark font-weight-bold"><i class="fas fa-plus-circle text-primary"></i> Dodaj powrót</button>
+      </div>
+      <div class="connections__control form-group">
+        <label for="connectionsCount">Ilość osób:</label>
+        <div class="input-group">
+          <input type="number" class="form-control" id="connectionsCount" value="1" min="1" required>
+          <div class="input-group-append">
+            <button class="btn btn-outline-form" type="button"><i class="fas fa-sliders-h text-primary"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-lg btn-block connections__submit"><i class="fas fa-search"></i> Szukaj połączenia</button>
+  </form>
+</section>

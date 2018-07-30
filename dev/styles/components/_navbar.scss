@@ -1,0 +1,16 @@
+.navbar-nav-separated {
+  $gutter: 1rem;
+  border: 0 solid rgba($white, .2);
+
+  @include media-breakpoint-down(md) {
+    margin-top: $gutter;
+    padding-top: $gutter;
+    border-top-width: 1px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-left: $gutter;
+    padding-left: $gutter;
+    border-left-width: 1px;
+  }
+}

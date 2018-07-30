@@ -1,0 +1,39 @@
+.feature {
+  list-style: none;
+  padding: 2rem;
+  margin: 0;
+  border: 1px solid $light;
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .feature {
+    padding: 4rem 2rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+  }
+
+  .feature {
+    padding: 6rem 3rem;
+
+    &__icon {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}

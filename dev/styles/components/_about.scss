@@ -1,0 +1,11 @@
+.about {
+  @include media-breakpoint-up(lg) {
+    &__article {
+      max-width: 35rem;
+    }
+
+    &__title {
+        min-height: 8rem;
+      }
+  }
+}

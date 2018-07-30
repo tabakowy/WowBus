@@ -1,0 +1,11 @@
+.hero {
+  background: url('img/hero.png');
+  background-size: cover;
+
+  &__lead {
+    @include media-breakpoint-up(md) {
+      font-size: 5rem;
+      padding: 3rem 0;
+    }
+  }
+}
